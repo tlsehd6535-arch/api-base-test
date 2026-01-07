@@ -73,8 +73,8 @@ app.post('/users', async (req, res) => {
     password, // aktlakfh1!
   ]);
 
-  res.json({ message: '회원가입 완료' });
-  // res.status(201).json({ message: '회원가입 완료' });
+  // res.json({ message: '회원가입 완료' });
+  res.status(201).json({ message: '회원가입 완료' });
 });
 
 // 서버 실행
